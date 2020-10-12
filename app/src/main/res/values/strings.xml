@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EnglishSpeaker</string>
+    <string name="delete">delete</string>
+    <string name="add">Add</string>
+    <string name="prev">previous</string>
+    <string name="speak">speak</string>
+    <string name="next">next</string>
+</resources>
