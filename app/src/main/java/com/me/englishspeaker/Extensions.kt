@@ -4,7 +4,7 @@ import android.content.Context
 import java.io.File
 import java.io.FileInputStream
 
-fun Context.getWordsFile() : File {
+fun Context.getWordsFile(): File {
     return File("${filesDir}/words.txt")
 }
 
@@ -19,8 +19,8 @@ fun Context.readWordsFromFile(): String {
     }
 }
 
-fun String.saveWordsToFile(context: Context) {
-    val wordsFile = context.getWordsFile()
-    wordsFile.writeText(this)
+fun Context.saveWordsToFile(words: String) {
+    val wordsFile = getWordsFile()
+    wordsFile.writeText(words)
 }
 

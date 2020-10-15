@@ -104,7 +104,7 @@ class MainActivity : AppCompatActivity() {
             words = words.substring(0, words.length - 1)
         }
 
-        words.saveWordsToFile(this)
+        saveWordsToFile(words)
     }
 
     private fun speakWord(word: String) {

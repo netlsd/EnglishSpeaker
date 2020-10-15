@@ -18,7 +18,7 @@ class WordAddActivity : AppCompatActivity() {
 
     override fun onPause() {
         super.onPause()
-        binding.editWords.text.toString().saveWordsToFile(this)
+        saveWordsToFile(binding.editWords.text.toString())
     }
 
 }
